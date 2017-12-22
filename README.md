@@ -1,13 +1,13 @@
 # yumonclearlinux
 script to set up basic yum functionality on Intel Clear Linux
 
-## Background
+### Background
 
 Intel Clear Linux groups it's packages in task-specific [bundles](https://clearlinux.org/documentation/clear-linux/reference/bundles/available-bundles).
 
 These are generally very useful. For example, installing the shells bundle installs a couple of useful shells.
 
-## The Problem
+### The Problem
 
 But if you want to install third-party apps, Intel recommends [flatpak](https://clearlinux.org/documentation/clear-linux/tutorials/flatpak).
 
@@ -17,7 +17,7 @@ But overall I find the flatpak apps to be slow compared to optimized Intel Clear
 
 Also not all third-party apps are available in flatpak, such as Enpass or Virtual Studio Code.
 
-## Solution
+### Solution
 
 Intel Clear Linux includes a yum utility in the [os-clr-on-clr](https://github.com/clearlinux/clr-bundles/blob/master/bundles/os-clr-on-clr) bundle that can be set up with repos, including a handy [Intel Clear Linux yum-compatible repo](https://download.clearlinux.org/current/x86_64/os/).
 
@@ -30,22 +30,31 @@ This allows you to:
 * Install specific packages in Intel Clear Linux, from Intel Clear Linux repo's containing optimized binaries, without having to install an entire bundle.
 * Install third-party yum repos and rpms and fulfill their dependencies with Intel Clear Linux optimized binaries.
 * Build from third-party source rpms with optimized settings and fulfill their dependencies with optimized Intel Clear Linux source. 
+
+### Installation
+
+```
+git clone https://github.com/sirredbeard/yumonclearlinux.git
+cd yumonclearlinux
+nano yum.conf	#make edits as necessary
+./setup-yum.sh	#run script
+```
  
-## Known Working
+### Known Working
 
 * Visual Studio Code (via Microsoft's yum repo)
 * Enpass (download executable from website, install dependencies with yum install libXScrnSaver lsof)
 * EPEL 7 repo
 
-## Known Issues
+### Known Issues
 
 * yum-config-manager doesn't work, fails with "ImportError: No module named iniparse" despite installation of iniparse, python-iniparse, and python3-iniparse. **Workaround**: Edit /etc/yum.conf directly.
 * Adding any of the Fedora project's yum repos, 25-27, tries to install a bunch of packages with dependencies issues, wreaks havoc on the machine.
 * Uninstalling python3 breaks yum, requiring a reinstall of Clear Linux. *You have been warned.*
 
-## To Test
+### To Do
 
-* Additional third-party repositories.
+* Test additional third-party repositories.
 
 ## Caution
 
