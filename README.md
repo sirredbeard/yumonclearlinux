@@ -7,7 +7,9 @@ Intel Clear Linux groups it's packages in task-specific [bundles](https://clearl
 
 ### The Problem
 
-But if you want to install third-party apps, Intel recommends [flatpak](https://clearlinux.org/documentation/clear-linux/tutorials/flatpak). Flatpak is helpful and a decent comprimise for apps like Spotify and Corebird which have complicated dependency requirements. But overall I find the flatpak apps to be slow compared to normal Linux binaries and particularly slow compared to the optimized Intel Clear Linux binaries. Also not all third-party apps are available in flatpak, such as Enpass or Virtual Studio Code.
+But if you want to install third-party apps, Intel recommends [flatpak](https://clearlinux.org/documentation/clear-linux/tutorials/flatpak). Flatpak is helpful and a decent comprimise for apps like Spotify and Corebird which have complicated dependency requirements.
+
+But overall I find the flatpak apps to be slow compared to normal Linux distro binaries and particularly slow compared to the optimized Intel Clear Linux binaries. LibreOffice in flatpak is just not responsive enough. Also not all third-party apps are available in flatpak, such as Enpass or Virtual Studio Code.
 
 ### Solution
 
@@ -18,8 +20,7 @@ Intel Clear Linux includes yum in the [os-clr-on-clr](https://github.com/clearli
 This allows you to:
 
 * Install specific packages in Intel Clear Linux, from Intel Clear Linux repo's containing optimized binaries, without having to install an entire bundle.
-* Install third-party yum repos and rpms and fulfill their dependencies with Intel Clear Linux optimized binaries.
-* Build from third-party source rpms with optimized settings and fulfill their dependencies with optimized Intel Clear Linux source. 
+* Install third-party yum repos and rpms and fulfill their dependencies with Intel Clear Linux optimized binaries, e.g. LibreOffice 6. 
 
 ### Installation
 
@@ -45,6 +46,7 @@ nano yum.conf	#make edits as necessary
 ### To Do
 
 * Test additional third-party repositories.
+* Test if possible to build from third-party source rpms with optimized settings and fulfill their dependencies with optimized Intel Clear Linux source.
 
 ## Caution
 
