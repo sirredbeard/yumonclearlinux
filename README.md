@@ -49,6 +49,7 @@ chmod u+x setup-yum.sh
 
 * Test additional third-party repositories.
 * Test if possible to build from third-party source rpms with optimized settings and fulfill their dependencies with optimized Intel Clear Linux source.
+* **Write a less-invasive RPM-based package manager for Clear Linux, more like Homebrew**
 
 ## Caution
 
