@@ -40,6 +40,7 @@ chmod u+x setup-yum.sh
 
 ### Known Issues
 
+* **This will probably break your swupd.**
 * yum-config-manager doesn't work, fails with "ImportError: No module named iniparse" despite installation of iniparse, python-iniparse, and python3-iniparse. **Workaround**: Edit /etc/yum.conf directly.
 * Adding any of the Fedora project's yum repos, 25-27, tries to install a bunch of packages with dependencies issues, wreaks havoc on the machine.
 * Uninstalling python3 breaks yum, requiring a reinstall of Clear Linux. *You have been warned.*
