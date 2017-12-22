@@ -27,6 +27,6 @@ This allows you to:
 
 (2) Install third-party yum repos and rpms and fulfill their specific dependencies with Intel Clear Linux optimized binaries.
 	
-(3) Build from third-party source rpms with optimized settings and and fulfill their dependencies with optimized Intel Clear Linux source. 
+(3) Build from third-party source rpms with optimized settings and fulfill their dependencies with optimized Intel Clear Linux source. 
  
  
