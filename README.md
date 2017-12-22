@@ -7,11 +7,11 @@ Intel Clear Linux groups it's packages in task-specific [bundles](https://clearl
 
 ### The Problem
 
-But if you want to install third-party apps, Intel recommends [flatpak](https://clearlinux.org/documentation/clear-linux/tutorials/flatpak). Flatpak is helpful for apps like Spotify and Corebird which have complicated dependency requirements. But overall I find the flatpak apps to be slow compared to optimized Intel Clear Linux binaries. Also not all third-party apps are available in flatpak, such as Enpass or Virtual Studio Code.
+But if you want to install third-party apps, Intel recommends [flatpak](https://clearlinux.org/documentation/clear-linux/tutorials/flatpak). Flatpak is helpful and a decent comprimise for apps like Spotify and Corebird which have complicated dependency requirements. But overall I find the flatpak apps to be slow compared to normal Linux binaries and particularly slow compared to the optimized Intel Clear Linux binaries. Also not all third-party apps are available in flatpak, such as Enpass or Virtual Studio Code.
 
 ### Solution
 
-Intel Clear Linux includes a yum utility in the [os-clr-on-clr](https://github.com/clearlinux/clr-bundles/blob/master/bundles/os-clr-on-clr) bundle that can be set up with repos, including a handy [Intel Clear Linux yum-compatible repo](https://download.clearlinux.org/current/x86_64/os/). This allows *basic* yum functionality (see Known Issues) and greater package granularity than the official Intel Clear Linux bundle approach.
+Intel Clear Linux includes yum in the [os-clr-on-clr](https://github.com/clearlinux/clr-bundles/blob/master/bundles/os-clr-on-clr) bundle that can be set up with repos, including a handy [Intel Clear Linux yum-compatible repo](https://download.clearlinux.org/current/x86_64/os/). This allows *basic* yum functionality (see Known Issues) and greater package granularity than the official Intel Clear Linux bundle approach.
 
 ### Why Should I Care?
 
