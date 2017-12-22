@@ -32,4 +32,4 @@ This allows you to:
  
 ## Known Issues
 
-(1) yum-config-manager doesn't work, fails with "ImportError: No module named iniparse" despite installation of iniparse, python-iniparse, and python3-iniparse.
+(1) yum-config-manager doesn't work, fails with "ImportError: No module named iniparse" despite installation of iniparse, python-iniparse, and python3-iniparse. **Workaround**: Edit /etc/yum.conf directly.
