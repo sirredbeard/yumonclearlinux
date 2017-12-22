@@ -1,5 +1,7 @@
 # yumonclearlinux
-script to set up basic yum functionality on Intel Clear Linux
+Script to enable basic yum functionality on Intel Clear Linux.
+
+**Proof of concept. This will probably break your swupd.** Run in a container or VM.
 
 ### Background
 
