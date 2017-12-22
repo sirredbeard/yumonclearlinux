@@ -30,3 +30,6 @@ This allows you to:
 (3) Build from third-party source rpms with optimized settings and fulfill their dependencies with optimized Intel Clear Linux source. 
  
  
+## Known Issues
+
+(1) yum-config-manager doesn't work, fails with "ImportError: No module named iniparse" despite installation of iniparse, python-iniparse, and python3-iniparse.
