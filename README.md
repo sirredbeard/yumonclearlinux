@@ -1,11 +1,13 @@
 # yumonclearlinux
 Script to enable basic yum functionality on Intel Clear Linux.
 
-**Proof of concept. This will probably break your swupd.** Run in a container or VM.
+**Proof of concept. This _will_ probably break your swupd.** Run in a container or VM.
+
+Tested on clear-19810.
 
 ### Background
 
-Intel Clear Linux groups it's packages in task-specific [bundles](https://clearlinux.org/documentation/clear-linux/reference/bundles/available-bundles). These are generally very useful. For example, installing the [shells bundle](https://github.com/clearlinux/clr-bundles/blob/master/bundles/shells) installs a couple of useful shells like bash, zsh, and fish.
+In lieu of traditional single-package package management, Intel Clear Linux groups it's packages in task-related [bundles](https://clearlinux.org/documentation/clear-linux/reference/bundles/available-bundles). These are generally very useful. For example, installing the [shells bundle](https://github.com/clearlinux/clr-bundles/blob/master/bundles/shells) installs a couple of useful shells like bash, zsh, and fish.
 
 ### The Problem
 
