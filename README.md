@@ -1,5 +1,5 @@
 # yumonclearlinux
-script to set up yum on Intel Clear Linux
+script to set up basic yum functionality on Intel Clear Linux
 
 ## Background
 
