@@ -33,12 +33,15 @@ This allows you to:
  
 ## Known Working
 
-* Visual Studio Code
+* Visual Studio Code (via Microsoft's yum repo)
 * Enpass
+* EPEL 7 repo
 
 ## Known Issues
 
 (1) yum-config-manager doesn't work, fails with "ImportError: No module named iniparse" despite installation of iniparse, python-iniparse, and python3-iniparse. **Workaround**: Edit /etc/yum.conf directly.
+(2) Adding any Fedora project main yum repos, 25-27, tries to install a bunch of packages with dependencies issues, wreaks havoc on the machine.
+(3) Uninstalling python3 breaks yum.
 
 ## Caution
 
