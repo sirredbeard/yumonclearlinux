@@ -45,4 +45,4 @@ This allows you to:
 
 ## Caution
 
-Installing packages using yum instead of swupd is not officially supported and can/will break your system. Be very conservative about what you do.
+Installing packages using yum instead of swupd is not officially supported and can and will break your system, swupd, and cause data loss. Test all use of this in a virtual machine first.
