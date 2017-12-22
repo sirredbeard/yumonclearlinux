@@ -5,7 +5,7 @@ script to set up basic yum functionality on Intel Clear Linux
 
 Intel Clear Linux groups it's packages in task-specific [bundles](https://clearlinux.org/documentation/clear-linux/reference/bundles/available-bundles).
 
-These are generally very useful. For example, installing the shells bundle installs a couple of useful shells.
+These are generally very useful. For example, installing the [shells bundle](https://github.com/clearlinux/clr-bundles/blob/master/bundles/shells) installs a couple of useful shells like bash, zsh, and fish.
 
 ### The Problem
 
@@ -21,9 +21,9 @@ Also not all third-party apps are available in flatpak, such as Enpass or Virtua
 
 Intel Clear Linux includes a yum utility in the [os-clr-on-clr](https://github.com/clearlinux/clr-bundles/blob/master/bundles/os-clr-on-clr) bundle that can be set up with repos, including a handy [Intel Clear Linux yum-compatible repo](https://download.clearlinux.org/current/x86_64/os/).
 
-This allows basic yum functionality (see Known Issues) and greater package granularity than the official Intel Clear Linux bundle approach.
+This allows *basic* yum functionality (see Known Issues) and greater package granularity than the official Intel Clear Linux bundle approach.
 
-## Why Should I Care?
+### Why Should I Care?
 
 This allows you to:
 
