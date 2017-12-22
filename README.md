@@ -9,7 +9,7 @@ Intel Clear Linux groups it's packages in task-specific [bundles](https://clearl
 
 But if you want to install third-party apps, Intel recommends [flatpak](https://clearlinux.org/documentation/clear-linux/tutorials/flatpak). Flatpak is helpful and a decent comprimise for apps like Spotify and Corebird which have complicated dependency requirements.
 
-But overall I find the flatpak apps to be slow compared to normal Linux distro binaries and particularly slow compared to the optimized Intel Clear Linux binaries. LibreOffice in flatpak is just not responsive enough. Also not all third-party apps are available in flatpak, such as Enpass or Virtual Studio Code.
+Overall I find the flatpak apps to be slow compared to normal Linux distro binaries and particularly slow compared to the optimized Intel Clear Linux binaries. LibreOffice in flatpak is just not responsive enough. Also not all third-party apps are available in flatpak, such as Enpass or Virtual Studio Code.
 
 ### Solution
 
@@ -28,6 +28,7 @@ This allows you to:
 git clone https://github.com/sirredbeard/yumonclearlinux.git
 cd yumonclearlinux
 nano yum.conf	#make edits as necessary
+chmod u+x setup-yum.sh
 ./setup-yum.sh	#run script
 ```
  
