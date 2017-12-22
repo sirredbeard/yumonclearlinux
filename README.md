@@ -23,10 +23,10 @@ Intel Clear Linux includes a yum utility in the os-clr-on-clr bundle that can be
 
 This allows you to:
 
-	(1) Install specific packages in Intel Clear Linux containing the same optimized binaries as the bundles.
+(1) Install specific packages in Intel Clear Linux, containing Intel Clear Linux optimized binaries, without having to install an entire bundle.
 
-	(2) Install third-party yum repos and rpms and fulfill their dependencies with optimized Intel Clear Linux source/binaries.
+(2) Install third-party yum repos and rpms and fulfill their specific dependencies with Intel Clear Linux optimized binaries.
 	
-	(3) Build from third-party source rpms with optimized settings and and fulfill their dependencies with optimized Intel Clear Linux source/binaries. 
+(3) Build from third-party source rpms with optimized settings and and fulfill their dependencies with optimized Intel Clear Linux source. 
  
  
