@@ -6,3 +6,5 @@ sudo cp /etc/yum.conf /etc/yum.conf.old   #if for some reason you have something
 sudo rm /etc/yum.conf                     #clear the way for our file
 
 sudo cp yum.conf /etc/yumd.conf           #copy the yum.conf from this repo
+
+sudo yum update
